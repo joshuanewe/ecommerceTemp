@@ -11,7 +11,7 @@ const Navbar = () => {
 	return (
 		<div className="navbar-container">
 			<p className="logo">
-				<Link href="/">NewEdge Electronics</Link>
+				<Link href="/">TENTH KINGDOM LAVENDER FARM</Link>
 			</p>
 			<button
 				type="button"

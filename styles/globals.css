@@ -130,12 +130,13 @@ width: 100%;
 
 .hero-banner-container{
   padding: 100px 40px;
-  background-color: #dcdcdc;
+  /* background-color: #dcdcdc; */
   border-radius: 15px;
   position: relative;
   height: 500px;
   line-height: 0.9; 
   width: 100%;
+  overflow: hidden;
 
 }
 .hero-banner-container .beats-solo{
@@ -164,12 +165,35 @@ width: 100%;
   margin-left: -20px;
   text-transform: uppercase;
 }
+.hero-banner-image-top{
+  z-index: -2;
+  margin: auto;
+  object-fit: cover;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right:0;
+  width: 100%;
+  height: 100%;
+}
+.hero-banner-container::after {
+  background-color: aliceblue;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.4; 
+}
 .hero-banner-image{
   position: absolute;
   top: 0%;
   right:20%;
-  width: 450px;
-  height: 450px;
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -195,6 +219,9 @@ text-align: end;
   font-size: 16px;
   /* color: black; */
   align-self: flex-end;
+}
+.desc banner p{
+  color: #324d67;
 }
 .products-heading{
   text-align: center;

@@ -43,6 +43,9 @@ const Cart = () => {
 
 		stripe.redirectToCheckout({ sessionId: data.id });
 	};
+	let timeCreated = cartItems.map((item) => {
+		return item;
+	});
 
 	return (
 		<div className="cart-wrapper" ref={cartRef}>
